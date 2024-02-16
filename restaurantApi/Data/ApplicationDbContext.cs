@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using restaurantApi.Models;
 
 namespace restaurantApi.Data
 {
@@ -9,5 +10,6 @@ namespace restaurantApi.Data
             : base(options)
         {
         }
+        public DbSet<restaurantApi.Models.Reservation> Reservation { get; set; } = default!;
     }
 }
