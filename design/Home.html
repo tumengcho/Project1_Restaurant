@@ -12,7 +12,28 @@
     />
     <title>Restaurant</title>
   </head>
+  
   <body>
+    <nav class="nav">
+      <div class="container">
+          <div class="logo">
+              <a href="#">Your Logo</a>
+          </div>
+          <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <span class="navTrigger">
+              <i></i>
+              <i></i>
+              <i></i>
+          </span>
+      </div>
+  </nav>
     <div class="section-top d-flex mb-5">
       <div class="mx-auto my-auto text-center">
         <h3 class="mb-5">LA LUNA ESPECTARO</h3>
@@ -191,10 +212,7 @@
         </div>
       </div>
     </div>
-  </body>
-
-  <footer class="footer"></footer>
-  <script
+    <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"
@@ -204,4 +222,20 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"
   ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+  </body>
+
+  <footer class="footer"></footer>
+  
 </html>
