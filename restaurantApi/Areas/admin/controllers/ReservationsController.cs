@@ -21,6 +21,7 @@ namespace restaurantApi.Areas.admin.controllers
         }
 
         // GET: admin/Reservations
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
               return _context.Reservation != null ? 

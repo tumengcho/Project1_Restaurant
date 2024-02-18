@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2243151\\Downloads\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj": {}
+    "C:\\Users\\Admin\\Downloads\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2243151\\Downloads\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj": {
+    "C:\\Users\\Admin\\Downloads\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2243151\\Downloads\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Downloads\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj",
         "projectName": "restaurantApi",
-        "projectPath": "C:\\Users\\2243151\\Downloads\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj",
-        "packagesPath": "C:\\Users\\2243151\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2243151\\Downloads\\Project1_Restaurant\\restaurantApi\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Downloads\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Downloads\\Project1_Restaurant\\restaurantApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\2243151\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.312\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,6 +70,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.12, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -87,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.312\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
