@@ -6,6 +6,24 @@
   font-weight: bolder;
 }
 
+.btn-primary-app {
+  background-color: #a6230f;
+  color: white;
+  padding: 10px;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  font-size: smaller;
+}
+
+.btn-secondary-app {
+  background-color: white;
+  color: #a6230f;
+  padding: 10px;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  font-size: smaller;
+}
+
 .card-patiss .card {
   border-radius: 5%;
   box-shadow: 3px 3px 30px grey;
@@ -308,6 +326,7 @@
 .section-restaurant {
   height: 1000px;
 }
+
 .section-sc-color {
   background-color: #bd250e;
   color: white;

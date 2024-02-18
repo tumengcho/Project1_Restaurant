@@ -26,32 +26,43 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-        <span class="navTrigger">
+        <a class="navTrigger" data-bs-toggle="offcanvas" href="#menuAndroid" role="button" aria-controls="menuAndroid">
           <i></i>
           <i></i>
           <i></i>
-        </span>
+        </a>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="menuAndroid" aria-labelledby="menuAndroidLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="menuAndroidLabel">Menu Android</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>vide... a modifier</div>
+          </div>
+        </div>
+        
       </div>
     </nav>
     <div class="section-restaurant section d-flex">
       <div class="section-white p-3 my-auto" style="height: fit-content;">
         <div class="row m-0">
           <div class="col-md-6 col-12">
-            <img src="/images/bc-section-top.jpg" class="img-fluid" alt="" />
+            <img src="/images/img-reservation.jpg" class="img-fluid" alt="" />
           </div>
           <div class="col-md-6 d-flex col-12">
             <form class="my-auto">
             <h1 class="mb-5 text-center title">Reservation</h1>
 
               <div class="row m-0">
-                <div class="col-6">
+                <div class="col-6 my-3">
                   <input
                     type="text"
                     class="form-control"
                     placeholder="First name"
                   />
                 </div>
-                <div class="col-6">
+                <div class="col-6 my-3">
                   <input
                     type="text"
                     class="form-control"
@@ -59,35 +70,35 @@
                   />
                   
                 </div>
-                <div class="col-6">
+                <div class="col-6 my-3">
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="First name"
+                    placeholder="Number of Accompagnies"
                   />
                 </div>
-                <div class="col-6">
+                <div class="col-6 my-3">
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Last name"
+                    placeholder="Phone Number"
                   />
               </div>
-              <div class="col-12">
+              <div class="col-12 my-3">
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="First name"
+                  placeholder="Email"
                 />
               </div>
-              <div class="col-12">
+              <div class="col-12 my-3">
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Last name"
+                  placeholder="Date"
                 />
               </div>
-              <button class="mt-5">Reserve</button>
+              <button class="mt-5 btn-primary-app">Reserve</button>
             </form>
           </div>
         </div>

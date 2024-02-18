@@ -12,37 +12,36 @@
     />
     <title>Home</title>
   </head>
-  
+
   <body>
     <nav class="nav">
       <div class="container">
-          <div class="logo">
-              <a href="Home.html">Your Logo</a>
-          </div>
-          <div id="mainListDiv" class="main_list">
-              <ul class="navlinks">
-                  <li><a href="#">About</a></li>
-                  <li><a href="Patisserie.html">Patisserie</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Contact</a></li>
-              </ul>
-          </div>
-          <span class="navTrigger">
-              <i></i>
-              <i></i>
-              <i></i>
-          </span>
+        <div class="logo">
+          <a href="Home.html">Your Logo</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="#">About</a></li>
+            <li><a href="Patisserie.html">Patisserie</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
       </div>
-  </nav>
+    </nav>
     <div class="section-top d-flex mb-5">
       <div class="mx-auto my-auto text-center">
         <h3 class="mb-5">LA LUNA ESPECTARO</h3>
         <h1 class="big-title my-5">A TASTE OF PARIS</h1>
-        <button class="mt-5">DINE NOW</button>
       </div>
     </div>
     <div class="section row m-0 h-100">
-      <div class="col-12 col-md-6 row p-5 mt-5">
+      <div class="col-12 col-md-6 row m-0 p-5 mt-5">
         <div class="col-12 col-md-6 pb-5">
           <img
             src="/images/section-image1-cupcake.jpg"
@@ -68,7 +67,7 @@
             everything she learned - the flavors, the feelings, the family-style
             cafe - so that you can get a taste of Paris, too.
           </p>
-          <button>Book Now</button>
+          <button class="btn-secondary-app">Book Now</button>
         </div>
       </div>
     </div>
@@ -79,7 +78,7 @@
           <h5 class="py-md-5 py-3 mt-3">
             Add a supporting line that complements your statement above.
           </h5>
-          <button>Learn More</button>
+          <button class="btn-primary-app">Learn More</button>
         </div>
       </div>
       <div class="col-md-5 col-12 p-0">
@@ -107,11 +106,11 @@
             class="img-fluid p-md-4"
             alt="Image 1"
           />
-          <h4 class="fw-bold">Donut aux Parfum Doux</h4>
+          <h6 class="fw-bold">Donut aux Parfum Doux</h6>
         </div>
         <div class="col-md-3 col-12 p-md-4 p-2">
           <img src="/images/list-image-2.jpg" class="img-fluid" alt="Image 2" />
-          <h4 class="py-4 fw-bold">Special Batonnet Sugar Twist</h4>
+          <h6 class="py-4 fw-bold">Special Batonnet Sugar Twist</h6>
         </div>
         <div class="col-md-3 col-12 p-md-4">
           <img
@@ -119,7 +118,7 @@
             class="img-fluid p-md-4"
             alt="Image 3"
           />
-          <h4 class="fw-bold">The Cupcake au Chocolat</h4>
+          <h6 class="fw-bold">The Cupcake au Chocolat</h6>
         </div>
       </div>
     </div>
@@ -151,7 +150,7 @@
     </div>
     <div class="section-testimony text-center py-5 h-100">
       <h1 class="title fw-bold py-5">Our Track Record</h1>
-      <div class="row h-100 p-5 mb-5">
+      <div class="row m-0 h-100 p-5 mb-5">
         <div class="col-md-4 col-12 testimony p-md-5">
           <img src="/images/star-sample.png" class="img-fluid w-50" alt="" />
           <hr />
@@ -213,29 +212,28 @@
       </div>
     </div>
     <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/scripts.js"></script>
-  <script>
-    $(window).scroll(function() {
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+      $(window).scroll(function () {
         if ($(document).scrollTop() > 50) {
-            $('.nav').addClass('affix');
-            console.log("OK");
+          $(".nav").addClass("affix");
+          console.log("OK");
         } else {
-            $('.nav').removeClass('affix');
+          $(".nav").removeClass("affix");
         }
-    });
-</script>
+      });
+    </script>
   </body>
 
   <footer class="footer"></footer>
-  
 </html>
