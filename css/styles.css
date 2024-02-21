@@ -1,4 +1,16 @@
 /* ordre alphabetic pls */
+html{
+  height: fit-content;
+  overflow-x: hidden;
+}
+
+
+.aos-init{
+  margin: 0;
+  padding: 0;
+  
+}
+
 
 .big-title {
   font-size: 5em;
@@ -31,6 +43,12 @@
 
 .description1 {
   color: #bcbcbc;
+}
+
+.fade {
+  opacity: 0;
+  transition: 200ms ease-in-out transform,
+              200ms ease-in-out opacity;
 }
 
 .grid-container {
@@ -349,8 +367,8 @@
   }
 }
 .icon-div {
-  width: 180px;
-  height: 180px;
+  width: 280px;
+  height: 280px;
   align-self: center;
 }
 
@@ -404,7 +422,7 @@
 }
 
 .section-top-patisserie {
-  background-image: url("/images/test.gif");
+  background-image: url("/images/bc-test.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -441,6 +459,11 @@
   align-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+.show_content {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .testimony {
