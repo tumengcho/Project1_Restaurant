@@ -29,6 +29,47 @@
   box-shadow: 3px 3px 30px grey;
 }
 
+.description1 {
+  color: #bcbcbc;
+}
+
+.grid-container {
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+.grid-item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 460px;
+  width: auto;
+  background-image: url("/images/grid-item-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.grid-item2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  height: 620px;
+  width: auto;
+  background-image: url("/images/grid-item-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.grid-item3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  height: 460px;
+  width: auto;
+  background-image: url("/images/grid-item-3.jpg");
+  background-position: 50% 30%;
+  background-size: cover;
+}
+
+
+
 .nav {
   width: 100%;
   height: 65px;
@@ -323,6 +364,17 @@
   height: 700px;
   width: 100%;
 }
+
+.section-info-top {
+  height: 900px;
+  width: 100%;
+  background-image: url("/images/bc-infos-top.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin-bottom: 100px;
+}
+
 .section-restaurant {
   height: 1000px;
 }
@@ -378,6 +430,17 @@
 
 .shadow-text {
   text-shadow: 0.5px 0.5px 5px grey;
+}
+
+.sSection1 {
+  height: 900px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.454);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .testimony {
