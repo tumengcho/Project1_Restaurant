@@ -10,8 +10,11 @@
 
           <div class="row m-0">
             <div class="col-6 my-3">
-              <input
+              <input [(ngModel)]="nom"
+
                 type="text"
+                     name="nom"
+                     id="nom"
                 class="form-control"
                 placeholder="First name"
               >
@@ -22,11 +25,13 @@
                 class="form-control"
                 placeholder="Last name"
               >
-              
+
             </div>
             <div class="col-6 my-3">
-              <input
-                type="text"
+              <input [(ngModel)]="nombre"
+                     name="numbre"
+                     id="numbre"
+                type="number"
                 class="form-control"
                 placeholder="Number of Accompagnies"
               >
@@ -39,23 +44,28 @@
               >
           </div>
           <div class="col-12 my-3">
-            <input
+            <input [(ngModel)]="email"
               type="text"
+                   name="email"
+                   id="email"
               class="form-control"
               placeholder="Email"
             >
           </div>
           <div class="col-12 my-3">
-            <input
+          <!--  <input
               type="text"
               class="form-control"
               placeholder="Date"
-            >
+            >-->
+            <label for="datepicker">Sélectionnez une date :</label>
+            <input [(ngModel)]="date" type="date" id="datepicker" name="datepicker">
+
           </div>
-          <button class="mt-5 btn-primary-app">Reserve</button>
+          <button class="mt-5 btn-primary-app" (click)="create()">Reserve</button>
           </div>
         </form>
-        
+
       </div>
     </div>
   </div>

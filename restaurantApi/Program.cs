@@ -16,6 +16,15 @@ builder.Services.AddControllersWithViews();
 // Ajouter les services pour Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin();
+        builder.AllowAnyHeader();
+        builder.AllowAnyMethod();
+    });
+});
 
 var app = builder.Build();
 
@@ -36,7 +45,7 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseCors("AllowAll");
 app.UseRouting();
 
 app.UseAuthorization();
