@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patisserie</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">
+          <a [routerLink]="['']">Your Logo</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a [routerLink]="['about']">About</a></li>
+            <li><a [routerLink]="['patisserie']">Patisserie</a></li>
+            <li><a [routerLink]="['reservation']">Reservation</a></li>
+            <li><a [routerLink]="['contact']">Contact</a></li>
+          </ul>
+        </div>
+        <a class="navTrigger" data-bs-toggle="offcanvas" href="#menuAndroid" role="button" aria-controls="menuAndroid">
+          <i></i>
+          <i></i>
+          <i></i>
+        </a>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="menuAndroid" aria-labelledby="menuAndroidLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="menuAndroidLabel">Menu Android</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>vide... a modifier</div>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+    
+    <router-outlet></router-outlet>
+    
+    
+  </body>
+</html>
+
