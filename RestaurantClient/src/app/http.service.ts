@@ -7,6 +7,8 @@ import {lastValueFrom} from "rxjs";
 })
 export class HttpService {
 
+
+  PlatList: PlatDTO[] = [];
   constructor(public http: HttpClient) { }
 
 
@@ -15,7 +17,12 @@ export class HttpService {
 let result = await lastValueFrom(this.http.post<any>('http://localhost:5095/api/Reservations',r))
     console.log(result)
   }
+async getFood(){
+  let result = await lastValueFrom(this.http.get<PlatDTO[]>('http://localhost:5095/api/platsGet'))
+  console.log(result);
+  this.PlatList = result;
 
+}
 
 
 }
@@ -23,4 +30,10 @@ let result = await lastValueFrom(this.http.post<any>('http://localhost:5095/api/
 export class ReservationDTO{
   constructor(public NbreClient:number, public NomDuReservateur:string, public DateTime: Date, public email: string) {
   }
+}
+export class PlatDTO{
+  public name: string| any;
+  public prix: number| any;
+  public images: string| any;
+
 }

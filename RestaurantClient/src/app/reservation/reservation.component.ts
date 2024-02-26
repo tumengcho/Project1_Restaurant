@@ -17,6 +17,7 @@ export class ReservationComponent implements OnInit {
 
 
   ngOnInit() {
+    this.Serv.getFood();
   }
  async create(){
 await this.Serv.CreateReservation(this.nombre,this.nom,this.date,this.email);
