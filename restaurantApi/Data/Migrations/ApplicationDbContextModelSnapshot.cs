@@ -273,6 +273,162 @@ namespace restaurantApi.Data.Migrations
                     b.HasKey("id");
 
                     b.ToTable("plat");
+
+                    b.HasData(
+                        new
+                        {
+                            id = 1,
+                            images = "https://upload.wikimedia.org/wikipedia/commons/8/81/Chinese_Chawal_in_Basmati.jpg",
+                            name = "Plat 1",
+                            prix = 10
+                        },
+                        new
+                        {
+                            id = 2,
+                            images = "https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/tag_photos/original/2426/plat_principal_flickr_2304576748_f79c906b85_b.jpg",
+                            name = "Plat 2",
+                            prix = 20
+                        },
+                        new
+                        {
+                            id = 3,
+                            images = "https://upload.wikimedia.org/wikipedia/commons/8/81/Chinese_Chawal_in_Basmati.jpg",
+                            name = "Plat 3",
+                            prix = 30
+                        },
+                        new
+                        {
+                            id = 4,
+                            images = "https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/tag_photos/original/2426/plat_principal_flickr_2304576748_f79c906b85_b.jpg",
+                            name = "Plat 4",
+                            prix = 40
+                        },
+                        new
+                        {
+                            id = 5,
+                            images = "https://upload.wikimedia.org/wikipedia/commons/8/81/Chinese_Chawal_in_Basmati.jpg",
+                            name = "Plat 5",
+                            prix = 50
+                        },
+                        new
+                        {
+                            id = 6,
+                            images = "https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/tag_photos/original/2426/plat_principal_flickr_2304576748_f79c906b85_b.jpg",
+                            name = "Plat 6",
+                            prix = 60
+                        },
+                        new
+                        {
+                            id = 7,
+                            images = "https://upload.wikimedia.org/wikipedia/commons/8/81/Chinese_Chawal_in_Basmati.jpg",
+                            name = "Plat 7",
+                            prix = 70
+                        },
+                        new
+                        {
+                            id = 8,
+                            images = "https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/tag_photos/original/2426/plat_principal_flickr_2304576748_f79c906b85_b.jpg",
+                            name = "Plat 8",
+                            prix = 80
+                        },
+                        new
+                        {
+                            id = 9,
+                            images = "https://upload.wikimedia.org/wikipedia/commons/8/81/Chinese_Chawal_in_Basmati.jpg",
+                            name = "Plat 9",
+                            prix = 90
+                        },
+                        new
+                        {
+                            id = 10,
+                            images = "https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/tag_photos/original/2426/plat_principal_flickr_2304576748_f79c906b85_b.jpg",
+                            name = "Plat 10",
+                            prix = 100
+                        },
+                        new
+                        {
+                            id = 11,
+                            images = "https://upload.wikimedia.org/wikipedia/commons/8/81/Chinese_Chawal_in_Basmati.jpg",
+                            name = "Plat 11",
+                            prix = 110
+                        },
+                        new
+                        {
+                            id = 12,
+                            images = "https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/tag_photos/original/2426/plat_principal_flickr_2304576748_f79c906b85_b.jpg",
+                            name = "Plat 12",
+                            prix = 120
+                        },
+                        new
+                        {
+                            id = 13,
+                            images = "https://upload.wikimedia.org/wikipedia/commons/8/81/Chinese_Chawal_in_Basmati.jpg",
+                            name = "Plat 13",
+                            prix = 130
+                        },
+                        new
+                        {
+                            id = 14,
+                            images = "https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/tag_photos/original/2426/plat_principal_flickr_2304576748_f79c906b85_b.jpg",
+                            name = "Plat 14",
+                            prix = 140
+                        },
+                        new
+                        {
+                            id = 15,
+                            images = "https://upload.wikimedia.org/wikipedia/commons/8/81/Chinese_Chawal_in_Basmati.jpg",
+                            name = "Plat 15",
+                            prix = 150
+                        },
+                        new
+                        {
+                            id = 16,
+                            images = "https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/tag_photos/original/2426/plat_principal_flickr_2304576748_f79c906b85_b.jpg",
+                            name = "Plat 16",
+                            prix = 160
+                        },
+                        new
+                        {
+                            id = 17,
+                            images = "https://upload.wikimedia.org/wikipedia/commons/8/81/Chinese_Chawal_in_Basmati.jpg",
+                            name = "Plat 17",
+                            prix = 170
+                        },
+                        new
+                        {
+                            id = 18,
+                            images = "https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/tag_photos/original/2426/plat_principal_flickr_2304576748_f79c906b85_b.jpg",
+                            name = "Plat 18",
+                            prix = 180
+                        },
+                        new
+                        {
+                            id = 19,
+                            images = "https://upload.wikimedia.org/wikipedia/commons/8/81/Chinese_Chawal_in_Basmati.jpg",
+                            name = "Plat 19",
+                            prix = 190
+                        },
+                        new
+                        {
+                            id = 20,
+                            images = "https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/tag_photos/original/2426/plat_principal_flickr_2304576748_f79c906b85_b.jpg",
+                            name = "Plat 20",
+                            prix = 200
+                        },
+                        new
+                        {
+                            id = 21,
+                            images = "https://upload.wikimedia.org/wikipedia/commons/8/81/Chinese_Chawal_in_Basmati.jpg",
+                            name = "Plat 21",
+                            prix = 210
+                        },
+                        new
+                        {
+                            id = 22,
+                            images = "https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/tag_photos/original/2426/plat_principal_flickr_2304576748_f79c906b85_b.jpg",
+                            name = "Plat 22",
+                            prix = 220
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using restaurantApi.Data;
 using restaurantApi.Models;
+using restaurantApi.URL;
 
 namespace restaurantApi.Areas.admin.controllers
 {
@@ -24,7 +25,9 @@ namespace restaurantApi.Areas.admin.controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-              return _context.plat != null ? 
+            string randomUrl = UrlGenerator.GenerateRandomUrl(10);
+            Console.WriteLine("URL aléatoire générée : " + randomUrl);
+            return _context.plat != null ? 
                           View(await _context.plat.ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.plat'  is null.");
         }
