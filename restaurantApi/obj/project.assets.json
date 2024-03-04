@@ -12154,11 +12154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\2243151\\Downloads\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj",
+      "projectUniqueName": "C:\\Users\\2243151\\Documents\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj",
       "projectName": "restaurantApi",
-      "projectPath": "C:\\Users\\2243151\\Downloads\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj",
+      "projectPath": "C:\\Users\\2243151\\Documents\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj",
       "packagesPath": "C:\\Users\\2243151\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\2243151\\Downloads\\Project1_Restaurant\\restaurantApi\\obj\\",
+      "outputPath": "C:\\Users\\2243151\\Documents\\Project1_Restaurant\\restaurantApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\2243151\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12169,7 +12169,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.311\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -12238,7 +12238,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

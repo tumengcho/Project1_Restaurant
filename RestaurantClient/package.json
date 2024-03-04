@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve & cd .. ",
+    "server": "cd ../restaurantApi && dotnet ef database update  && dotnet.exe exec ../restaurantApi/bin/Debug/net7.0/restaurantApi.dll",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

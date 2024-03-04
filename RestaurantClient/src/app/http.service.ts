@@ -14,11 +14,11 @@ export class HttpService {
 
   async CreateReservation(nomnbre: number, nom:string, date:Date, email:string){
     let r = new ReservationDTO(nomnbre,nom,date,email);
-let result = await lastValueFrom(this.http.post<any>('http://localhost:5095/api/Reservations',r))
+let result = await lastValueFrom(this.http.post<any>('http://localhost:5000/api/Reservations',r))
     console.log(result)
   }
 async getFood(){
-  let result = await lastValueFrom(this.http.get<PlatDTO[]>('http://localhost:5095/api/platsGet'))
+  let result = await lastValueFrom(this.http.get<PlatDTO[]>('http://localhost:5000/api/platsGet'))
   console.log(result);
   this.PlatList = result;
 
