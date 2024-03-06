@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2274252\\Desktop\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj": {}
+    "C:\\Users\\2274252\\Documents\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2274252\\Desktop\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj": {
+    "C:\\Users\\2274252\\Documents\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2274252\\Desktop\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj",
+        "projectUniqueName": "C:\\Users\\2274252\\Documents\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj",
         "projectName": "restaurantApi",
-        "projectPath": "C:\\Users\\2274252\\Desktop\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj",
+        "projectPath": "C:\\Users\\2274252\\Documents\\Project1_Restaurant\\restaurantApi\\restaurantApi.csproj",
         "packagesPath": "C:\\Users\\2274252\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2274252\\Desktop\\Project1_Restaurant\\restaurantApi\\obj\\",
+        "outputPath": "C:\\Users\\2274252\\Documents\\Project1_Restaurant\\restaurantApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\2274252\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,6 +83,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -92,6 +106,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win10-x64": {
+          "#import": []
         }
       }
     }
