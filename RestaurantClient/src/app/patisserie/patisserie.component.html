@@ -74,7 +74,7 @@
             />
             <div class="card-body">
               <h5>{{plat.name}}</h5>
-              <p class="card-text">Savourez une symphonie de saveurs avec notre filet de saumon grillé, accompagné d'une onctueuse purée de patates douces et d'asperges fraîchement rôties. Chaque bouchée vous transporte vers un paradis culinaire où la tendresse du saumon cuit à la perfection se marie harmonieusement avec la douceur veloutée de la purée de patates douces, créant une explosion de goûts en bouche. Les asperges, légèrement caramélisées, apportent une touche de fraîcheur et de croquant à ce délicieux plat. Que ce soit pour un repas décontracté entre amis ou une soirée gastronomique en tête-à-tête, ce plat exquis saura satisfaire les palais les plus exigeants et laisser une empreinte mémorable à chaque dégustation.</p>
+              <p class="card-text">Savourez une symphonie de saveurs avec notre filet de saumon grillé, accompagné d'une onctueuse purée de patates douces et d'asperges fraîchement rôties.</p>
               <p class="card-text">{{plat.prix}}</p>
               <p style="text-decoration: underline">more</p>
             </div>
@@ -97,7 +97,7 @@
             a family celebration, or a casual meetup, we have the perfect
             setting and menu to make your moments special.
           </p>
-          <button class="btn-secondary-app">Reserve Now</button>
+          <button class="btn-secondary-app" [routerLink]="['/reservation']">Reserve Now</button>
         </div>
       </div>
     </div>
