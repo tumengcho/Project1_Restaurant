@@ -9,7 +9,7 @@ import {HttpService} from "../http.service";
 export class ReservationComponent implements OnInit {
 
   constructor(public Serv:HttpService) { }
-
+  confirm: boolean = false;
   nom:string|any
   nombre:number|any
   date:Date|any
@@ -21,5 +21,7 @@ export class ReservationComponent implements OnInit {
   }
  async create(){
 await this.Serv.CreateReservation(this.nombre,this.nom,this.date,this.email);
+this.confirm = true;
  }
+
 }
