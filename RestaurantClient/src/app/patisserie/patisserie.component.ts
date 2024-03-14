@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Aos from 'aos';
+import {HttpService} from "../http.service";
 
 @Component({
   selector: 'app-patisserie',
@@ -8,9 +9,10 @@ import * as Aos from 'aos';
 })
 export class PatisserieComponent implements OnInit {
 
-  constructor() { }
+  constructor(public Http: HttpService) { }
 
   ngOnInit() {
+    this.Http.getFood();
     document.querySelector('.nav')?.classList.remove('affix')
 
     Aos.init({

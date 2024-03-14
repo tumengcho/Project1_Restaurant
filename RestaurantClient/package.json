@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm i && npm i concurrently && npm run commands",
+    "server": " concurrently \"cd ../restaurantApi & dotnet ef database update & cd bin/Release/net7.0/win10-x64/publish/  & restaurantApi.exe\"",
+    "commands": "concurrently \"ng serve\" \"npm run server\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -19,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
     "aos": "^2.3.4",
+    "concurrently": "^8.2.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

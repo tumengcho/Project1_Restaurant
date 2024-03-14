@@ -1,4 +1,7 @@
-<div class="section-restaurant section d-flex">
+
+
+
+<div class="section-restaurant section d-flex" *ngIf="!confirm">
   <div class="section-white p-3 my-auto" style="height: fit-content;">
     <div class="row m-0">
       <div class="col-md-6 col-12">
@@ -53,20 +56,26 @@
             >
           </div>
           <div class="col-12 my-3">
-          <!--  <input
-              type="text"
-              class="form-control"
-              placeholder="Date"
-            >-->
+
             <label for="datepicker">Sélectionnez une date :</label>
             <input [(ngModel)]="date" type="date" id="datepicker" name="datepicker">
 
           </div>
-          <button class="mt-5 btn-primary-app" (click)="create()">Reserve</button>
+          <button class="mt-5 btn-primary-app"  (click)="create()">Reserve</button>
           </div>
         </form>
-
       </div>
     </div>
   </div>
 </div>
+
+
+<div class="confirmation" *ngIf="confirm">
+  <h2>Confirmation de Réservation</h2>
+  <p>Merci pour votre réservation!</p>
+  <p>Votre réservation pour le nom : <strong>{{nom}}</strong> a été confirmé.</p>
+  <p>Un email de confirmation vous a été envoyé.</p>
+  <button [routerLink]="['']">retour à l'accueil</button>
+
+</div>
+
